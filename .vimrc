@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'terryma/vim-smooth-scroll'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'junegunn/fzf.vim'
 
 " Colorschemes
 Plugin 'sts10/vim-pink-moon'
@@ -24,3 +25,4 @@ let s:include_path = fnamemodify(resolve(expand('<sfile>:p')), ':h').'/includes/
 execute 'source '.s:include_path.'/custom.vim'
 execute 'source '.s:include_path.'/smooth_scroll.vim'
 execute 'source '.s:include_path.'/resize.vim'
+execute 'source '.s:include_path.'/fzf.vim'
