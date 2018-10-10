@@ -14,8 +14,9 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'sts10/vim-pink-moon'
 Plugin 'lmintmate/blue-mood-vim'
 Plugin 'kaicataldo/material.vim'
+Plugin 'vim-airline/vim-airline'
 
-call vundle#end() 
+call vundle#end()
 
 filetype plugin on
 syntax on " Syntax highlighting
@@ -23,6 +24,7 @@ syntax on " Syntax highlighting
 " Custom includes
 let s:include_path = fnamemodify(resolve(expand('<sfile>:p')), ':h').'/includes/vim'
 execute 'source '.s:include_path.'/custom.vim'
-execute 'source '.s:include_path.'/smooth_scroll.vim'
+"execute 'source '.s:include_path.'/smooth_scroll.vim'
 execute 'source '.s:include_path.'/resize.vim'
 execute 'source '.s:include_path.'/fzf.vim'
+execute 'source '.s:include_path.'/airline.vim'

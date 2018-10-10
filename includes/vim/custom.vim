@@ -33,3 +33,10 @@ set list
 
 set backspace=indent,eol,start
 set smartindent
+
+"https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
+set clipboard=unnamed
+
+"folding options
+set foldmethod=indent
+set foldminlines=3
