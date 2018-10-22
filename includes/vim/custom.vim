@@ -40,4 +40,4 @@ set clipboard=unnamed
 "folding options
 set foldmethod=indent
 set foldminlines=3
-set foldlevel=100
+set nofoldenable
