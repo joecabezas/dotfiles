@@ -1,3 +1,4 @@
 set rtp+=/usr/local/opt/fzf
 
-nnoremap <C-p> :FZF<CR>
+nnoremap <leader>p :FZF<CR>
+nnoremap <leader>o :Buffers<CR>
