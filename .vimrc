@@ -8,6 +8,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'junegunn/fzf.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-fugitive.git'
+Plugin 'tpope/vim-rhubarb.git'
 
 " Colorschemes
 Plugin 'sts10/vim-pink-moon'
