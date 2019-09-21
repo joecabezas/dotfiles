@@ -12,6 +12,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-rhubarb.git'
+Plugin 'dense-analysis/ale'
 
 " Colorschemes
 Plugin 'sts10/vim-pink-moon'
