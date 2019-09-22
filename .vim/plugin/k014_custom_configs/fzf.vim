@@ -5,7 +5,3 @@ if substitute(system('uname'), '\n', '', '') == "Linux"
 else
   set rtp+=/usr/local/opt/fzf
 endif
-
-nnoremap <leader>p :FZF<CR>
-nnoremap <leader>o :Buffers<CR>
-nnoremap <leader>i :Lines<CR>
