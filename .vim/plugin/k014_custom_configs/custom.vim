@@ -1,4 +1,4 @@
-colorscheme yellow-moon
+colorscheme badwolf
 
 set path+=**
 
