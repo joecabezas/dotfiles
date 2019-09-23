@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'junegunn/fzf.vim'
+Plugin 'vim-airline/vim-airline'
 Plugin 'junegunn/goyo.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive.git'
@@ -18,7 +19,9 @@ Plugin 'dense-analysis/ale'
 Plugin 'sts10/vim-pink-moon'
 Plugin 'lmintmate/blue-mood-vim'
 Plugin 'kaicataldo/material.vim'
-Plugin 'vim-airline/vim-airline'
+Plugin 'dracula/vim'
+Plugin 'caglartoklu/qbcolor.vim'
+Plugin 'sjl/badwolf'
 
 call vundle#end()
 
