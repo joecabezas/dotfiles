@@ -2,6 +2,7 @@
 nnoremap <leader>p :FZF<CR>
 nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>i :Lines<CR>
+nnoremap <leader>u :Commands<CR>
 
 " goyo
 nnoremap <leader>g :Goyo<CR>
