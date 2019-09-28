@@ -1,32 +1,26 @@
-set nocompatible
-filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-" Let vundle manage itself:
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'junegunn/fzf.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'junegunn/goyo.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive.git'
-Plugin 'tpope/vim-rhubarb.git'
-Plugin 'dense-analysis/ale'
+Plug 'ntpeters/vim-better-whitespace'
+"Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'junegunn/goyo.vim'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'dense-analysis/ale'
+Plug 'Yggdroot/indentLine'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Colorschemes
-Plugin 'sts10/vim-pink-moon'
-Plugin 'lmintmate/blue-mood-vim'
-Plugin 'kaicataldo/material.vim'
-Plugin 'dracula/vim'
-Plugin 'caglartoklu/qbcolor.vim'
-Plugin 'sjl/badwolf'
+Plug 'sts10/vim-pink-moon'
+Plug 'lmintmate/blue-mood-vim'
+Plug 'kaicataldo/material.vim'
+Plug 'dracula/vim'
+Plug 'caglartoklu/qbcolor.vim'
+Plug 'sjl/badwolf'
 
-call vundle#end()
-
-filetype plugin on
-syntax on " Syntax highlighting
+call plug#end()
 
 " Custom includes
 let s:k014_include_path = fnamemodify(resolve(expand('<sfile>:p')), ':h').'/.vim'

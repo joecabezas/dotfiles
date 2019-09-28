@@ -1,6 +1,6 @@
-colorscheme badwolf
+set nocompatible
 
-set path+=**
+colorscheme dracula
 
 set incsearch              " While typing a search, show where the pattern matches
 set ignorecase             " Ignoring case in a pattern:
