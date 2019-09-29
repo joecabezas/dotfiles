@@ -8,8 +8,6 @@ set hlsearch               " Highlights all the search pattern matches:
 set smartcase              " While typing a search, show where the pattern matches:
 
 set showmatch              " Show matching braces when cursor is over them:
-"set ruler                  " Always show the cursor position
-"set number                 " Display the current line number
 set number relativenumber  " Display the relative line number
 set showmode               " Always show the mode
 set showcmd                " Display incomplete commands
@@ -33,7 +31,6 @@ set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 
 set backspace=indent,eol,start
-set smartindent
 
 "https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
 set clipboard=unnamed
@@ -42,3 +39,7 @@ set clipboard=unnamed
 set foldmethod=indent
 set foldminlines=2
 set nofoldenable
+
+" better vertial movement for wrapped lines
+nnoremap j gj
+nnoremap k gk
