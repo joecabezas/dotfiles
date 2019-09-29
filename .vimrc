@@ -1,16 +1,16 @@
 call plug#begin()
 
-Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/fzf.vim'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'jceb/vim-orgmode'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
