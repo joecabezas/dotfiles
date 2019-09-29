@@ -43,3 +43,5 @@ set nofoldenable
 " better vertial movement for wrapped lines
 nnoremap j gj
 nnoremap k gk
+
+autocmd FileType * setlocal formatoptions-=cro
