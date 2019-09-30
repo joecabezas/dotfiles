@@ -10,6 +10,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
+Plug 'jceb/vim-orgmode'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
