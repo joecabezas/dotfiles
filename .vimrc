@@ -19,6 +19,7 @@ Plug 'kaicataldo/material.vim'
 Plug 'dracula/vim'
 Plug 'caglartoklu/qbcolor.vim'
 Plug 'sjl/badwolf'
+Plug 'doums/darcula'
 
 call plug#end()
 
