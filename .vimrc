@@ -11,6 +11,8 @@ Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'jceb/vim-orgmode'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
