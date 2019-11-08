@@ -1,3 +1,4 @@
+
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
@@ -19,7 +20,36 @@ There are two things you can do about this warning:
 
 (require 'helm-config)
 (helm-mode 1)
-(helm-autoresize-mode t)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (dracula)))
+ '(custom-safe-themes
+   (quote
+    ("947190b4f17f78c39b0ab1ea95b1e6097cc9202d55c73a702395fc817f899393" "a68670dce845d18af9ec87716b4d4c2ea071271eccc80242be4d232c58b3cca2" default)))
+ '(helm-autoresize-min-height 40)
+ '(helm-autoresize-max-height 40)
+ '(helm-autoresize-mode t)
+ '(inhibit-startup-screen t)
+ '(linum-relative-backend (quote linum-relative-mode))
+ '(linum-relative-current-symbol "")
+ '(menu-bar-mode nil)
+ '(org-export-backends (quote (ascii beamer html icalendar latex md odt)))
+ '(package-selected-packages
+   (quote
+    (linum-relative ox-reveal which-key helm-ag helm-projectile projectile airline-themes fzf dracula-theme pkg-info org-link-minor-mode org helm evil)))
+ '(powerline-default-separator (quote wave))
+ '(scroll-bar-mode nil)
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:height 150)))))
 
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
@@ -36,28 +66,3 @@ There are two things you can do about this warning:
 (powerline-default-theme)
 
 (setq org-reveal-root "https://cdn.jsdelivr.net/npm/reveal.js")
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (dracula)))
- '(custom-safe-themes
-   (quote
-    ("947190b4f17f78c39b0ab1ea95b1e6097cc9202d55c73a702395fc817f899393" "a68670dce845d18af9ec87716b4d4c2ea071271eccc80242be4d232c58b3cca2" default)))
- '(inhibit-startup-screen t)
- '(menu-bar-mode nil)
- '(org-export-backends (quote (ascii beamer html icalendar latex md odt)))
- '(package-selected-packages
-   (quote
-    (ox-reveal which-key helm-ag helm-projectile projectile airline-themes fzf dracula-theme pkg-info org-link-minor-mode org helm evil)))
- '(powerline-default-separator (quote wave))
- '(scroll-bar-mode nil)
- '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
