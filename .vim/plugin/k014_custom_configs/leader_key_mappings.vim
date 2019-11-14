@@ -1,11 +1,9 @@
 " fzf
 nnoremap <leader>p :FZF<CR>
 nnoremap <leader>o :Buffers<CR>
-nnoremap <leader>i :Lines<CR>
+nnoremap <leader>i :Ag<CR>
+nnoremap <leader>l :Lines<CR>
 nnoremap <leader>u :Commands<CR>
-
-" goyo
-nnoremap <leader>g :Goyo<CR>
 
 " resize
 nnoremap <leader>7 :res +2<CR> " increase pane by 2
