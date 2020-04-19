@@ -8,6 +8,9 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle docker
 antigen bundle fzf
 antigen bundle zsh_reload
+antigen bundle zsh-interactive-cd
+
+antigen bundle /home/joe/winjoe/git/k014-ohmyzsh-custom --no-local-clone
 
 # Load the theme
 antigen theme robbyrussell
