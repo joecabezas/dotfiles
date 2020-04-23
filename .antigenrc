@@ -9,6 +9,8 @@ antigen bundle docker
 antigen bundle fzf
 antigen bundle zsh_reload
 antigen bundle zsh-interactive-cd
+antigen bundle kubectl
+antigen bundle unixorn/kubectx-zshplugin
 
 antigen bundle /home/joe/winjoe/git/k014-ohmyzsh-custom --no-local-clone
 

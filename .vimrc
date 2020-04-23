@@ -13,6 +13,7 @@ Plug 'jceb/vim-orgmode'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'towolf/vim-helm'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
