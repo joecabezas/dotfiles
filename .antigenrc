@@ -12,7 +12,7 @@ antigen bundle zsh-interactive-cd
 antigen bundle kubectl
 antigen bundle unixorn/kubectx-zshplugin
 
-antigen bundle /home/joe/winjoe/git/k014-ohmyzsh-custom --no-local-clone
+antigen bundle ~/git/k014-ohmyzsh-custom --no-local-clone
 
 # Load the theme
 antigen theme robbyrussell
