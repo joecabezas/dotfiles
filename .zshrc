@@ -1,3 +1,4 @@
+# Load antigen
 source $HOME/antigen.zsh
 
 # Initialize antigen
