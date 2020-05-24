@@ -16,6 +16,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'towolf/vim-helm'
+Plug 'pangloss/vim-javascript'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
