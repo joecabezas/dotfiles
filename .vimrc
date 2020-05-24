@@ -17,6 +17,7 @@ Plug 'honza/vim-snippets'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'towolf/vim-helm'
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'

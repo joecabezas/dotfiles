@@ -44,4 +44,7 @@ set nofoldenable
 nnoremap j gj
 nnoremap k gk
 
+" indentation
+set autoindent
+
 autocmd FileType * setlocal formatoptions-=cro
