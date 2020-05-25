@@ -18,6 +18,8 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'towolf/vim-helm'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
