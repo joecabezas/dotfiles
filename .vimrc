@@ -20,6 +20,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'Galooshi/vim-import-js'
+Plug 'mattn/emmet-vim'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
