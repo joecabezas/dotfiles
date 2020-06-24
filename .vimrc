@@ -37,6 +37,9 @@ Plug 'doums/darcula'
 
 call plug#end()
 
+" plugins bundled with vim
+packadd! matchit
+
 " Custom includes
 let s:k014_include_path = fnamemodify(resolve(expand('<sfile>:p')), ':h').'/.vim'
 execute 'set rtp+='.s:k014_include_path
