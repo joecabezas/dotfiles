@@ -24,6 +24,7 @@ Plug 'mattn/emmet-vim'
 Plug 'takac/vim-hardtime'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'vim-ruby/vim-ruby'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
