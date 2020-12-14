@@ -14,6 +14,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline'
+Plug 'mtth/scratch.vim'
+Plug 'junegunn/vim-peekaboo'
 
 " disabled
 " Plug 'dense-analysis/ale'
@@ -22,6 +24,7 @@ Plug 'vim-airline/vim-airline'
 " Plug 'takac/vim-hardtime'
 " Plug 'tpope/vim-bundler'
 " Plug 'vim-ruby/vim-ruby'
+" Plug 'ludovicchabant/vim-gutentags'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'

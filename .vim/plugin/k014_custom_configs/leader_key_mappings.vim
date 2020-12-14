@@ -4,6 +4,7 @@ nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>i :Ag<CR>
 nnoremap <leader>l :Lines<CR>
 nnoremap <leader>u :Commands<CR>
+nnoremap <leader>s :Scratch<CR>
 
 " resize
 nnoremap <leader>7 :res +2<CR> " increase pane by 2
