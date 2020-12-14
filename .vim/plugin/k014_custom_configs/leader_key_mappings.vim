@@ -13,4 +13,4 @@ nnoremap <leader>9 :vertical res +2<CR> " vertical increase pane by 2
 nnoremap <leader>0 :vertical res -2<CR> " vertical decrease pane by 2
 
 " ale
-nmap <leader>f <Plug>(ale_fix)
+" nmap <leader>f <Plug>(ale_fix)
