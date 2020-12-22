@@ -1,4 +1,10 @@
-let g:coc_global_extensions = ['coc-json', 'coc-solargraph', 'coc-tsserver', 'coc-eslint']
+let g:coc_global_extensions = [
+      \'coc-json',
+      \'coc-solargraph',
+      \'coc-tsserver',
+      \'coc-eslint',
+      \'coc-snippets',
+      \]
 
 " TextEdit might fail if hidden is not set.
 set hidden
