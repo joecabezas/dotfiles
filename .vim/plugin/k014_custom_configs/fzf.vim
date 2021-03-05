@@ -5,3 +5,5 @@ if substitute(system('uname'), '\n', '', '') == "Linux"
 else
   set rtp+=/usr/local/opt/fzf
 endif
+
+let g:fzf_layout = {'down': '60%'}
