@@ -1,10 +1,11 @@
 " fzf
-nnoremap <leader>p :FZF<CR>
-nnoremap <leader>o :Buffers<CR>
+nnoremap <leader>h :History<CR>
 nnoremap <leader>i :Ag<CR>
 nnoremap <leader>l :Lines<CR>
-nnoremap <leader>u :Commands<CR>
+nnoremap <leader>o :Buffers<CR>
+nnoremap <leader>p :FZF<CR>
 nnoremap <leader>s :Scratch<CR>
+nnoremap <leader>u :Commands<CR>
 
 " resize
 nnoremap <leader>7 :res +2<CR> " increase pane by 2
