@@ -44,6 +44,10 @@ set nofoldenable
 nnoremap j gj
 nnoremap k gk
 
+" autocenter after search
+nnoremap n nzz
+nnoremap N Nzz
+
 " indentation
 set autoindent
 
