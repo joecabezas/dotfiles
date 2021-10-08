@@ -11,6 +11,7 @@ GIT_EDITOR=vim
 
 # custom dirs
 PATH=${PATH}:"~/bin"
+PATH=${PATH}:"~/.local/bin"
 PATH="$PATH:$(yarn global bin)"
 export PATH
 
