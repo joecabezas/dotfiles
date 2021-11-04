@@ -8,7 +8,7 @@ set hlsearch               " Highlights all the search pattern matches:
 set smartcase              " While typing a search, show where the pattern matches:
 
 set showmatch              " Show matching braces when cursor is over them:
-set number relativenumber  " Display the relative line number
+" set number relativenumber  " Display the relative line number
 set showmode               " Always show the mode
 set showcmd                " Display incomplete commands
 set incsearch              " Do incremental searching (as you type)
@@ -41,8 +41,8 @@ set foldminlines=2
 set nofoldenable
 
 " better vertial movement for wrapped lines
-nnoremap j gj
-nnoremap k gk
+" nnoremap j gj
+" nnoremap k gk
 
 " autocenter after search
 nnoremap n nzz
@@ -50,5 +50,9 @@ nnoremap N Nzz
 
 " indentation
 set autoindent
+
+" faster tty
+" https://stackoverflow.com/questions/307148/vim-scrolling-slowly
+set ttyfast
 
 autocmd FileType * setlocal formatoptions-=cro

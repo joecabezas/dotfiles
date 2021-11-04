@@ -1,30 +1,30 @@
 call plug#begin()
 
-Plug 'Galooshi/vim-import-js'
-Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim', { 'commit': '01f7146c' }
 Plug 'mattn/emmet-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'pangloss/vim-javascript'
 Plug 'shumphrey/fugitive-gitlab.vim'
-Plug 'towolf/vim-helm'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rhubarb'
-Plug 'vim-airline/vim-airline'
-Plug 'mtth/scratch.vim'
-Plug 'junegunn/vim-peekaboo'
 
 " disabled
+" Plug 'Galooshi/vim-import-js'
 " Plug 'dense-analysis/ale'
+" Plug 'junegunn/vim-peekaboo'
 " Plug 'leafgarland/typescript-vim'
+" Plug 'ludovicchabant/vim-gutentags'
+" Plug 'mtth/scratch.vim'
+" Plug 'ntpeters/vim-better-whitespace'
+" Plug 'pangloss/vim-javascript'
 " Plug 'peitalin/vim-jsx-typescript'
 " Plug 'takac/vim-hardtime'
+" Plug 'towolf/vim-helm'
 " Plug 'tpope/vim-bundler'
+" Plug 'vim-airline/vim-airline'
 " Plug 'vim-ruby/vim-ruby'
-" Plug 'ludovicchabant/vim-gutentags'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'

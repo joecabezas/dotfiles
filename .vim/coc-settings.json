@@ -1,4 +1,5 @@
 {
   "eslint.autoFixOnSave": true,
-  "solargraph.formatting": true
+  "solargraph.formatting": true,
+  "solargraph.diagnostics": true
 }
