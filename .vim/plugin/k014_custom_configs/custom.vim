@@ -48,6 +48,14 @@ set nofoldenable
 nnoremap n nzz
 nnoremap N Nzz
 
+" I am sorry
+command W w
+command Q q
+command WA wa
+command Wa wa
+command WQ wq
+command Wq wq
+
 " indentation
 set autoindent
 
