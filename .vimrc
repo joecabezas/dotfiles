@@ -9,6 +9,7 @@ Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rhubarb'
+Plug 'vim-airline/vim-airline'
 
 " disabled
 " Plug 'Galooshi/vim-import-js'
@@ -23,7 +24,6 @@ Plug 'tpope/vim-rhubarb'
 " Plug 'takac/vim-hardtime'
 " Plug 'towolf/vim-helm'
 " Plug 'tpope/vim-bundler'
-" Plug 'vim-airline/vim-airline'
 " Plug 'vim-ruby/vim-ruby'
 
 " Colorschemes
