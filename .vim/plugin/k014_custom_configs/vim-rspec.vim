@@ -1,1 +1,1 @@
-let g:rspec_command = "!spring rspec {spec}"
+let g:rspec_command = "!spring rspec --fail-fast {spec}"

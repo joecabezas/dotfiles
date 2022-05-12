@@ -18,6 +18,6 @@ nnoremap <leader>0 :vertical res -2<CR> " vertical decrease pane by 2
 
 " RSpec.vim mappings
 "map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>r :w<CR>:call RunNearestSpec()<CR>
-map <Leader>t :w<CR>:call RunLastSpec()<CR>
+map <Leader>r :wa<CR>:call RunNearestSpec()<CR>
+map <Leader>t :wa<CR>:call RunLastSpec()<CR>
 "map <Leader>a :call RunAllSpecs()<CR>
