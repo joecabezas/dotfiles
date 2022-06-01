@@ -17,7 +17,7 @@ nnoremap <leader>0 :vertical res -2<CR> " vertical decrease pane by 2
 " nmap <leader>f <Plug>(ale_fix)
 
 " RSpec.vim mappings
-"map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>e :call RunCurrentSpecFile()<CR>
 map <Leader>r :wa<CR>:call RunNearestSpec()<CR>
 map <Leader>t :wa<CR>:call RunLastSpec()<CR>
 "map <Leader>a :call RunAllSpecs()<CR>
