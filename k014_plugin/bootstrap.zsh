@@ -5,7 +5,7 @@ INCLUDE_FOLDER="$BASE_DIR/include"
 
 #Load all .zsh scripts in the include folder
 for include_file ($INCLUDE_FOLDER/*.zsh(N)); do
-	# echo "loading: $include_file"
-	source $include_file
+  # echo "loading: $include_file"
+  source $include_file
 done
 unset include_file

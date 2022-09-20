@@ -3,6 +3,14 @@ setopt globdots
 
 #Require cd command to enter a directory
 unsetopt AUTO_CD
+unsetopt autocd beep
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+# End of lines configured by zsh-newuser-install
 
 # custom vars
 VISUAL=vim
