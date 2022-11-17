@@ -1,6 +1,6 @@
 " fzf
 nnoremap <leader>h :History<CR>
-nnoremap <leader>i :Ag<CR>
+nnoremap <leader>i :Rg<CR>
 nnoremap <leader>l :Lines<CR>
 nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>p :FZF<CR>

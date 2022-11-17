@@ -13,9 +13,9 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 # custom vars
-VISUAL=vim
-EDITOR=vim
-GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+export GIT_EDITOR=vim
 
 # custom dirs
 PATH=${PATH}:"~/bin"
