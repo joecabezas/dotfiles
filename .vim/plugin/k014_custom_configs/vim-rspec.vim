@@ -1,1 +1,1 @@
-let g:rspec_command = "!spring rspec --fail-fast {spec}"
+let g:rspec_command = "!COVERAGE=false spring rspec --fail-fast {spec}"
