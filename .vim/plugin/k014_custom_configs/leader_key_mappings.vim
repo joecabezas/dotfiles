@@ -29,4 +29,5 @@ nmap <silent> <leader>t :wa<CR> :TestLast<CR>
 nmap <silent> <leader>a :wa<CR> :TestSuite<CR>
 nmap <silent> <leader>g :wa<CR> :TestVisit<CR>
 " let test#strategy = "dispatch"
+let test#ruby#rspec#options = '--fail-fast'
 let test#ruby#use_spring_binstub = 1
