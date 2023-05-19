@@ -2,9 +2,7 @@ set nocompatible
 
 colorscheme dracula
 
-set incsearch              " While typing a search, show where the pattern matches
 set ignorecase             " Ignoring case in a pattern:
-set hlsearch               " Highlights all the search pattern matches:
 set smartcase              " While typing a search, show where the pattern matches:
 
 set showmatch              " Show matching braces when cursor is over them:
