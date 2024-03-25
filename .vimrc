@@ -1,3 +1,8 @@
+" DEPRECATION
+"
+" I am no longer using this, please do not make symlink to this file,
+" from now on, I am using ./config/nvim/init.lua
+
 call plug#begin()
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -45,6 +50,6 @@ call plug#end()
 packadd! matchit
 
 " Custom includes
-let s:k014_include_path = fnamemodify(resolve(expand('<sfile>:p')), ':h').'/.vim'
-execute 'set rtp+='.s:k014_include_path
-runtime! plugin/**/*.vim
+" let s:k014_include_path = fnamemodify(resolve(expand('<sfile>:p')), ':h').'/.vim'
+" execute 'set rtp+='.s:k014_include_path
+" runtime! plugin/**/*.vim

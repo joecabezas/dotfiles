@@ -13,15 +13,6 @@ nnoremap <leader>8 :res -2<CR> " decrease pane by 2
 nnoremap <leader>9 :vertical res +2<CR> " vertical increase pane by 2
 nnoremap <leader>0 :vertical res -2<CR> " vertical decrease pane by 2
 
-" ale
-" nmap <leader>f <Plug>(ale_fix)
-
-" RSpec.vim mappings
-" map <Leader>e :wa<CR>:call RunCurrentSpecFile()<CR>
-" map <Leader>r :wa<CR>:call RunNearestSpec()<CR>
-" map <Leader>t :wa<CR>:call RunLastSpec()<CR>
-"map <Leader>a :call RunAllSpecs()<CR>
-
 " vim-test mappings
 nmap <silent> <leader>e :wa<CR> :TestFile<CR>
 nmap <silent> <leader>r :wa<CR> :TestNearest<CR>
