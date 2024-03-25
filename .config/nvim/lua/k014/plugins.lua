@@ -40,5 +40,6 @@ Plug 'dracula/vim'
 Plug 'caglartoklu/qbcolor.vim'
 Plug 'sjl/badwolf'
 Plug 'doums/darcula'
+Plug 'folke/tokyonight.nvim'
 
 vim.call('plug#end')
