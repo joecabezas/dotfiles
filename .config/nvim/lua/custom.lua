@@ -1,5 +1,5 @@
 -- Set color scheme to Dracula
-vim.cmd('colorscheme tokyonight')
+vim.cmd('colorscheme catppuccin')
 
 -- Autocenter after search
 local opts = { noremap = true, silent = true }

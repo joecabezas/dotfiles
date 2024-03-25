@@ -1,14 +1,13 @@
 -- Key mappings
-local map = vim.api.nvim_set_keymap
+local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- General mappings
-map('n', '<leader>h', ':History<CR>', opts)
+map('n', '<leader>H', ':History<CR>', opts)
 map('n', '<leader>i', ':Rg<CR>', opts)
-map('n', '<leader>l', ':Lines<CR>', opts)
-map('n', '<leader>o', ':Buffers<CR>', opts)
-map('n', '<leader>p', ':FZF<CR>', opts)
-map('n', '<leader>s', ':Scratch<CR>', opts)
+map('n', '<leader>L', ':Lines<CR>', opts)
+map('n', '<leader>O', ':Buffers<CR>', opts)
+map('n', '<leader>P', ':FZF<CR>', opts)
 map('n', '<leader>u', ':Commands<CR>', opts)
 
 -- Resize mappings
