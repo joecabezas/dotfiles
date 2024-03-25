@@ -10,5 +10,8 @@
 # source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 # load zplug and plugins
-source ~/.zplug/init.zsh
+# echo zmodload zsh/zprof 0
+# zmodload zsh/zprof
+# echo zmodload zsh/zprof 1
+
 source ~/.zplugrc

@@ -13,15 +13,16 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 # custom vars
-export VISUAL=vim
-export EDITOR=vim
-export GIT_EDITOR=vim
+export VISUAL=nvim
+export EDITOR=nvim
+export GIT_EDITOR=nvim
 
-# custom dirs
+# # custom dirs
 PATH=${PATH}:"~/bin"
 PATH=${PATH}:"~/.local/bin"
-PATH=$PATH:"/home/joe/neovim/bin/"
-#PATH=$PATH:$(yarn global bin)
+# linux only
+# PATH=${PATH}:"/home/joe/neovim/bin/"
+# #PATH=$PATH:$(yarn global bin)
 export PATH
 
 #custom aliases

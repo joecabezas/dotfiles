@@ -1,23 +1,33 @@
+source ~/.zplug/init.zsh
+
 zplug "junegunn/fzf"
 
-zplug "zsh-users/zsh-syntax-highlighting"
+# zplug "zsh-users/zsh-syntax-highlighting"
 
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/common-aliases", from:oh-my-zsh
 
 zplug 'dracula/zsh', as:theme
 
-# ln -s ~/git/dotfiles/k014_plugin .
-zplug "~/k014_plugin", from:local, use:"include/*.zsh"
+zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"custom_zsh.zsh"
+zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"fzf.zsh"
+zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"nodenv.zsh"
+zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"utils.zsh"
 
-# Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
+# too slow
+# # Install plugins if there are plugins that have not been installed
+# echo check 0
+# if ! zplug check --verbose; then
+#     printf "Install? [y/N]: "
+#     if read -q; then
+#         echo; zplug install
+#     fi
+# fi
+# echo check 1
+
+#cache is not working correctly
+# export ZPLUG_USE_CACHE=false
 
 # Then, source plugins and add commands to $PATH
-# zplug load --verbose
 zplug load
+# zplug load --verbose
