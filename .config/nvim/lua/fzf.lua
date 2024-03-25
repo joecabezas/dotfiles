@@ -7,4 +7,4 @@ else
 end
 
 -- Set FZF layout
-vim.g.fzf_layout = { down = '60%' }
+vim.g.fzf_layou = { down = '60%' }
