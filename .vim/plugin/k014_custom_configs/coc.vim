@@ -1,7 +1,6 @@
 let g:coc_global_extensions = [
       \'coc-eslint',
       \'coc-json',
-      \'coc-python',
       \]
 
 " TextEdit might fail if hidden is not set.
