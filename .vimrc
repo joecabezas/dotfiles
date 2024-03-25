@@ -12,6 +12,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-test/vim-test'
+Plug 'neovim/nvim-lspconfig'
 
 " disabled
 " Plug 'mtth/scratch.vim'
