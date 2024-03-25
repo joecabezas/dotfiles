@@ -4,7 +4,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim', { 'commit': '01f7146c' }
 Plug 'mattn/emmet-vim'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'mtth/scratch.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'tpope/vim-dispatch'
@@ -15,6 +14,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-test/vim-test'
 
 " disabled
+" Plug 'mtth/scratch.vim'
 " Plug 'Galooshi/vim-import-js'
 " Plug 'dense-analysis/ale'
 " Plug 'junegunn/vim-peekaboo'
@@ -27,7 +27,7 @@ Plug 'vim-test/vim-test'
 " Plug 'towolf/vim-helm'
 " Plug 'tpope/vim-bundler'
 " Plug 'vim-ruby/vim-ruby'
-"Plug 'thoughtbot/vim-rspec'
+" Plug 'thoughtbot/vim-rspec'
 
 " Colorschemes
 Plug 'sts10/vim-pink-moon'
