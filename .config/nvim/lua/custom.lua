@@ -51,6 +51,8 @@ local options = {
     expandtab = true,
     -- Number of spaces for each indentation level
     shiftwidth = 2,
+    -- Number of spaces inserted for a <Tab>
+    softtabstop = 2,
     -- Command-line completion mode (convert Vim list to Lua list)
     wildmode = {'list', 'longest', 'full'},
     -- Show completion matches in a popup menu
