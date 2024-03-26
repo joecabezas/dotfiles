@@ -69,8 +69,10 @@ local options = {
     backspace = {'indent', 'eol', 'start'},
     -- Use system clipboard
     clipboard = 'unnamed',
-    -- Use indent-based folding
-    foldmethod = 'indent',
+    -- Use folding
+    foldmethod = 'expr',
+    -- Set foldexpr to use nvim-treesitter
+    foldexpr = 'nvim_treesitter#foldexpr()',
     -- Minimum number of lines to trigger folding
     foldminlines = 2,
     -- Disable folding by default
