@@ -52,9 +52,9 @@ return {
     require("mason-lspconfig").setup {
       ensure_installed = {
         "lua_ls",
-        --"rubocop",
         "ruby_ls",
         "sorbet",
+        --"rubocop",
       },
     }
 
@@ -64,6 +64,7 @@ return {
     --lspconfig['rubocop'].setup({})
     lspconfig['ruby_ls'].setup({})
     lspconfig['sorbet'].setup({})
+    lspconfig['tsserver'].setup({})
 
   end,
 }

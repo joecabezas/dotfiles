@@ -2,18 +2,18 @@ source ~/.zplug/init.zsh
 
 zplug "junegunn/fzf"
 
-# zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-syntax-highlighting"
 
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/common-aliases", from:oh-my-zsh
 
 zplug 'dracula/zsh', as:theme
 
-zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"custom_zsh.zsh"
-zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"fzf.zsh"
-zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"nodenv.zsh"
-zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"utils.zsh"
-zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"rbenv.zsh"
+zplug "~/git/dotfiles/.config/k014_zsh/include", from:local, use:"custom_zsh.zsh"
+zplug "~/git/dotfiles/.config/k014_zsh/include", from:local, use:"fzf.zsh"
+zplug "~/git/dotfiles/.config/k014_zsh/include", from:local, use:"nodenv.zsh"
+zplug "~/git/dotfiles/.config/k014_zsh/include", from:local, use:"utils.zsh"
+zplug "~/git/dotfiles/.config/k014_zsh/include", from:local, use:"rbenv.zsh"
 
 # too slow
 # # Install plugins if there are plugins that have not been installed
@@ -25,9 +25,6 @@ zplug "~/git/dotfiles/k014_plugin/include", from:local, use:"rbenv.zsh"
 #     fi
 # fi
 # echo check 1
-
-#cache is not working correctly
-# export ZPLUG_USE_CACHE=false
 
 # Then, source plugins and add commands to $PATH
 zplug load

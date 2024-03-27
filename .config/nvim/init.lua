@@ -1,2 +1,2 @@
-require('custom')
 require('lazynvim')
+require('custom')
