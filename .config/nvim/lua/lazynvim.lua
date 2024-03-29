@@ -11,4 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Set the map leader to backslash
+vim.g.mapleader = "\\"
+
 require("lazy").setup('plugins')

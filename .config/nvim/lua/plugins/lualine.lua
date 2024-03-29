@@ -23,21 +23,24 @@ return {
     },
     sections = {
       lualine_a = {'mode'},
-      lualine_b = {'branch', 'diff', 'diagnostics'},
-      lualine_c = {'filename'},
-      lualine_x = {'filetype'},
-      lualine_y = {'progress'},
-      lualine_z = {
-        'location',
+      lualine_b = {
+        -- 'diff',
         {
           'diagnostics',
           sources = { 'nvim_lsp' },
           sections = { 'error', 'warn', 'info', 'hint' },
-          colored = false,
-          always_visible = true,
-          color = { bg = '#000000', gui='italic,bold' },
+          -- colored = false,
+          -- always_visible = true,
+          -- color = { bg = '#000000', gui='italic,bold' },
         },
       },
+      lualine_c = {'filename'},
+      lualine_x = {'filetype'},
+      lualine_y = {
+        -- 'progress',
+        'searchcount',
+      },
+      lualine_z = { 'location' },
     },
     inactive_sections = {
       lualine_a = {},
@@ -50,6 +53,5 @@ return {
     tabline = {},
     winbar = {},
     inactive_winbar = {},
-    extensions = {}
   }
 }
