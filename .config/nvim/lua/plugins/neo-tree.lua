@@ -1,7 +1,6 @@
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
-map("n", "<leader>fe", "<cmd>lua require('fzf-lua').files()<CR>", opts)
 map("n", "<leader>\\", "<cmd>Neotree reveal<CR>", opts)
 
 return {
