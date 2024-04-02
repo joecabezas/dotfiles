@@ -1,19 +1,19 @@
-local js_formatters = { { 'prettierd', 'prettier' } }
+local js_formatters = { { "prettierd", "prettier" } }
 
 return {
-  'stevearc/conform.nvim',
-  event = { 'BufReadPre', 'BufNewFile' },
-  cmd = { 'ConformInfo' },
+  "stevearc/conform.nvim",
+  event = { "BufReadPre", "BufNewFile" },
+  cmd = { "ConformInfo" },
   keys = {
     {
-      '<leader>f',
+      "<leader>f",
       function()
-        require('conform').format({
+        require("conform").format({
           async = true,
-          lsp_fallback = true
+          lsp_fallback = true,
         })
       end,
-      desc = 'Format buffer',
+      desc = "Format buffer",
     },
   },
   -- Everything in opts will be passed to setup()
@@ -22,11 +22,12 @@ return {
     formatters_by_ft = {
       javascript = js_formatters,
       javascriptreact = js_formatters,
-      lua = { 'stylua' },
+      lua = { "stylua" },
       typescript = js_formatters,
       typescriptreact = js_formatters,
       json = js_formatters,
       graphql = js_formatters,
+      -- ruby = { 'rubocop' },
     },
     -- Set up format-on-save
     -- format_on_save = { timeout_ms = 500, lsp_fallback = true },
