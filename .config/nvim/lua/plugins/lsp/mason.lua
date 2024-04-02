@@ -4,6 +4,9 @@ vim.keymap.set('n', '<space>d', vim.diagnostic.open_float, { desc = 'Open diagno
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic'})
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, {desc = 'Go to next diagnostic'})
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { desc = 'Set loclist' })
+vim.keymap.set('n', '<space>gi', '<cmd>LspInfo<cr>', { desc = 'LspInfo' })
+vim.keymap.set('n', '<space>gl', '<cmd>LspLog<cr>', { desc = 'LspLog' })
+vim.keymap.set('n', '<space>gm', '<cmd>Mason<cr>', { desc = 'Mason' })
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
@@ -56,11 +59,26 @@ require('mason-lspconfig').setup({
     'eslint',
     'lua_ls',
     'marksman',
-    'ruby_ls',
     'sorbet',
   },
   handlers = {
     default_setup,
+    rubocop = require('lspconfig').rubocop.setup({
+      capabilities = lsp_capabilities,
+      cmd = { os.getenv('PWD') .. '/bin/rubocop', '--lsp' },
+    }),
+    -- ruby_ls = require('lspconfig').ruby_ls.setup({
+    --   capabilities = lsp_capabilities,
+    -- }),
+    -- solargraph = require('lspconfig').solargraph.setup({
+    --   capabilities = lsp_capabilities,
+    --   cmd = { 'solargraph', 'stdio' },
+    --   settings = {
+    --     solargraph = {
+    --       useBundler = true
+    --     },
+    --   },
+    -- }),
     lua_ls = require('lspconfig').lua_ls.setup({
       capabilities = lsp_capabilities,
       settings = {

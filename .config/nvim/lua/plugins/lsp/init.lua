@@ -1,4 +1,6 @@
-return {
+vim.lsp.set_log_level('debug')
+
+local lsp = {
   'neovim/nvim-lspconfig',
   dependencies = {
     'williamboman/mason.nvim',
@@ -13,3 +15,5 @@ return {
     require('plugins.lsp.mason')
   end
 }
+
+return lsp
