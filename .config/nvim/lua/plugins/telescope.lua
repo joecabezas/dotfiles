@@ -14,8 +14,26 @@ return {
     { "<leader>o", function() require("telescope.builtin").buffers() end, desc = "Buffers", },
     { "<leader>i", function() require("telescope.builtin").live_grep() end, desc = "Live grep", },
   },
-  setup = function()
-    require("telescope").setup({})
-    require("telescope").load_extension("fzf")
+  opts = function ()
+    local opts = {
+      theme = "dropdown",
+      layout_strategy = "center",
+      layout_config = {
+        width = { padding = 5 },
+        anchor = 'N',
+      },
+      -- border = false,
+    }
+    return {
+      pickers = {
+        find_files = opts,
+        git_files = opts,
+        buffers = opts,
+        live_grep = opts,
+      },
+    }
   end,
+  -- config = function()
+  --   require("telescope").load_extension("fzf")
+  -- end,
 }
