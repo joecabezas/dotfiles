@@ -9,11 +9,11 @@ zplug "plugins/common-aliases", from:oh-my-zsh
 
 zplug 'dracula/zsh', as:theme
 
-zplug "~/git/dotfiles/.config/k014_zsh", from:local, use:"fzf.zsh"
-zplug "~/git/dotfiles/.config/k014_zsh", from:local, use:"nodenv.zsh"
-zplug "~/git/dotfiles/.config/k014_zsh", from:local, use:"rbenv.zsh"
-zplug "~/git/dotfiles/.config/k014_zsh", from:local, use:"utils.zsh"
-zplug "~/git/dotfiles/.config/k014_zsh", from:local, use:"custom_zsh.zsh"
+zplug "~/git/dotfiles/config/k014_zsh", from:local, use:"fzf.zsh"
+zplug "~/git/dotfiles/config/k014_zsh", from:local, use:"nodenv.zsh"
+zplug "~/git/dotfiles/config/k014_zsh", from:local, use:"rbenv.zsh"
+zplug "~/git/dotfiles/config/k014_zsh", from:local, use:"utils.zsh"
+zplug "~/git/dotfiles/config/k014_zsh", from:local, use:"custom_zsh.zsh"
 
 # too slow
 # # Install plugins if there are plugins that have not been installed
