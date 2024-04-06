@@ -49,6 +49,10 @@ return {
       vim.api.nvim_create_autocmd('LspAttach', {
         group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
         callback = function(event)
+          -- INFO: Set log level for debug
+          -- vim.lsp.set_log_level 'trace'
+          vim.lsp.set_log_level 'debug'
+
           -- NOTE: Remember that Lua is a real programming language, and as such it is possible
           -- to define small helper and utility functions so you don't have to repeat yourself.
           --
@@ -146,7 +150,13 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        tsserver = {},
+        tsserver = {
+          init_options = {
+            hostInfo = 'neovim',
+            maxTsServerMemory = 8192,
+            tsserver = { useSyntaxServer = 'never' },
+          },
+        },
 
         lua_ls = {
           -- cmd = {...},
