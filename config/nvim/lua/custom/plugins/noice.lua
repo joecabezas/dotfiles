@@ -1,5 +1,6 @@
 return {
   'folke/noice.nvim',
+  enabled = false,
   event = 'VeryLazy',
   dependencies = { 'hrsh7th/nvim-cmp' },
   opts = {
