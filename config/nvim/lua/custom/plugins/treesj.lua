@@ -3,9 +3,23 @@ return {
   'Wansmer/treesj',
   dependencies = { 'nvim-treesitter/nvim-treesitter' },
   keys = {
-    { '<leader>j', '<cmd>TSJToggle<cr>', desc = '[J]oin Toggle' },
+    {
+      '<leader>j',
+      function()
+        require('treesj').toggle()
+      end,
+      desc = '[J]oin Toggle',
+    },
+    {
+      '<leader>J',
+      function()
+        require('treesj').toggle { split = { recursive = true } }
+      end,
+      desc = '[J]oin Toggle Recursively',
+    },
   },
   opts = {
     use_default_keymaps = false,
+    max_join_length = 300,
   },
 }
