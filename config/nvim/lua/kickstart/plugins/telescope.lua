@@ -50,6 +50,16 @@ return {
       -- Telescope picker. This is really useful to discover what Telescope can
       -- do as well as how to actually do it!
 
+      local opts = {
+        theme = 'dropdown',
+        layout_strategy = 'center',
+        layout_config = {
+          width = { padding = 5 },
+          anchor = 'N',
+        },
+        -- border = false,
+      }
+
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
       require('telescope').setup {
@@ -61,7 +71,12 @@ return {
             i = { ['<c-enter>'] = 'to_fuzzy_refine' },
           },
         },
-        -- pickers = {}
+        pickers = {
+          find_files = opts,
+          git_files = opts,
+          buffers = opts,
+          live_grep = opts,
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
@@ -95,6 +110,7 @@ return {
           layout_strategy = 'center',
           layout_config = {
             width = { padding = 5 },
+            height = { padding = 5 },
             anchor = 'N',
           },
         })
