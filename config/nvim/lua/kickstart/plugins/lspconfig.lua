@@ -42,6 +42,8 @@ return {
       -- If you're wondering about lsp vs treesitter, you can check out the wonderfully
       -- and elegantly composed help section, `:help lsp-vs-treesitter`
 
+      vim.diagnostic.config { virtual_text = { source = true } }
+
       --  This function gets run when an LSP attaches to a particular buffer.
       --    That is to say, every time a new file is opened that is associated with
       --    an lsp (for example, opening `main.rs` is associated with `rust_analyzer`) this
@@ -51,7 +53,7 @@ return {
         callback = function(event)
           -- INFO: Set log level for debug
           -- vim.lsp.set_log_level 'trace'
-          vim.lsp.set_log_level 'debug'
+          -- vim.lsp.set_log_level 'debug'
 
           -- NOTE: Remember that Lua is a real programming language, and as such it is possible
           -- to define small helper and utility functions so you don't have to repeat yourself.
@@ -189,7 +191,7 @@ return {
       -- for you, so that they are available from within Neovim.
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
-        -- 'eslint',
+        'eslint',
         'marksman',
         'sorbet',
         'stylua', -- Used to format Lua code
