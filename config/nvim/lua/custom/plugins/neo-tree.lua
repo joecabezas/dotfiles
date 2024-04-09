@@ -22,6 +22,9 @@ return {
           hide_hidden = false, -- only works on Windows for hidden files/directories
         },
       },
+      window = {
+        width = 80,
+      },
     }
   end,
 }
