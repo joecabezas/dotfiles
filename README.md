@@ -41,3 +41,8 @@ mkdir -p ~/.config/nvim
 cd ~/.config/
 ln -s ~/git/dotfiles/config/nvim .
 ```
+
+### Nerd Fonts
+
+if you want icons (who am I fooling, nobody else than me will read this), download and install a font from here:
+https://www.nerdfonts.com/
