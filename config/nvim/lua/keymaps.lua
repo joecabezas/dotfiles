@@ -1,6 +1,15 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+--  Neovide specifics
+if vim.g.neovide then
+  vim.keymap.set('v', '<D-c>', '"+y')
+  vim.keymap.set('v', '<D-x>', '"+c')
+  vim.keymap.set('', '<D-v>', '"+p')
+  vim.keymap.set('c', '<D-v>', '<C-r><C-o>+')
+  vim.keymap.set('i', '<D-v>', '<C-r><C-o>+')
+end
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')

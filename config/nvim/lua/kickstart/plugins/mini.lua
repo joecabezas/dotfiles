@@ -20,17 +20,17 @@ return {
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
 
-      local animate = require 'mini.animate'
-      require('mini.animate').setup {
-        cursor = { enable = false },
-        scroll = {
-          enable = false,
-          timing = animate.gen_timing.linear {
-            duration = 100,
-            unit = 'total',
-          },
-        },
-      }
+      -- local animate = require 'mini.animate'
+      -- require('mini.animate').setup {
+      --   cursor = { enable = false },
+      --   scroll = {
+      --     enable = false,
+      --     timing = animate.gen_timing.linear {
+      --       duration = 100,
+      --       unit = 'total',
+      --     },
+      --   },
+      -- }
 
       require('mini.indentscope').setup {
         -- symbol = "▏",
