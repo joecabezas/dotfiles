@@ -71,4 +71,13 @@ vim.opt.foldminlines = 2
 -- Disable folding by default
 vim.opt.foldenable = false
 
+-- Use spaces instead of tabs
+vim.opt.expandtab = true
+
+-- Number of spaces for each indentation level
+vim.opt.shiftwidth = 2
+
+-- Number of spaces inserted for a <Tab>
+vim.opt.softtabstop = 2
+
 -- vim: ts=2 sts=2 sw=2 et
