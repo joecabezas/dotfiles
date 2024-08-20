@@ -9,7 +9,7 @@ zplug "plugins/common-aliases", from:oh-my-zsh
 
 zplug 'dracula/zsh', as:theme
 
-zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"fzf.zsh",
+zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"fzf.zsh"
 zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"nodenv.zsh"
 zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"rbenv.zsh"
 zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"pyenv.zsh"
