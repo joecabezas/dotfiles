@@ -18,8 +18,8 @@ export EDITOR=nvim
 export GIT_EDITOR=nvim
 
 # # custom dirs
-PATH="~/bin":${PATH}
-PATH="~/.local/bin":${PATH}
+PATH="$HOME/bin":${PATH}
+PATH="$HOME/.local/bin":${PATH}
 # linux only
 # PATH=${PATH}:"/home/joe/neovim/bin/"
 # #PATH=$PATH:$(yarn global bin)
