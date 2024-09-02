@@ -3,16 +3,14 @@ return {
   dependencies = {
     'folke/which-key.nvim',
     config = function()
-      require('which-key').register({
-        t = {
-          name = 'Vim Test',
-          e = { '<cmd>:wa<cr>:TestFile<cr>', 'Test File' },
-          r = { '<cmd>:wa<cr>:TestNearest<cr>', 'Test Nearest' },
-          t = { '<cmd>:wa<cr>:TestLast<cr>', 'Test Last' },
-          a = { '<cmd>:wa<cr>:TestSuite<cr>', 'Test Suite' },
-          g = { '<cmd>:wa<cr>:TestVisit<cr>', 'Test Visit' },
-        },
-      }, { prefix = '<leader>' })
+      require('which-key').add {
+        { '<leader>t', group = 'Vim Test' },
+        { '<leader>ta', '<cmd>:wa<cr>:TestSuite<cr>', desc = 'Test Suite' },
+        { '<leader>te', '<cmd>:wa<cr>:TestFile<cr>', desc = 'Test File' },
+        { '<leader>tg', '<cmd>:wa<cr>:TestVisit<cr>', desc = 'Test Visit' },
+        { '<leader>tr', '<cmd>:wa<cr>:TestNearest<cr>', desc = 'Test Nearest' },
+        { '<leader>tt', '<cmd>:wa<cr>:TestLast<cr>', desc = 'Test Last' },
+      }
     end,
   },
 }
