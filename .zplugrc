@@ -16,6 +16,11 @@ zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"pyenv.zsh"
 zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"utils.zsh"
 zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"custom_zsh.zsh"
 
+# mac only
+if [[ $(uname) == "Darwin" ]]; then
+    zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"mac.zsh"
+fi
+
 # too slow
 # # Install plugins if there are plugins that have not been installed
 # echo check 0
