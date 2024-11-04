@@ -16,6 +16,11 @@ return {
       -- used for completion, annotations and signatures of Neovim apis
       { 'folke/neodev.nvim', opts = {} },
     },
+    -- I don't think this actually works
+    -- opts = {
+    --   -- Automatically format on save
+    --   autoformat = false,
+    -- },
     config = function()
       -- Brief aside: **What is LSP?**
       --
@@ -145,15 +150,34 @@ return {
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
-        pylsp = {},
+        -- ruff = {},
+        pylsp = {
+          enable = false,
+          -- I am commenting this out since I am also removing pyright
+          -- disable several capabilities in favor of pyright
+          -- on_attach = function(client, buffer)
+          --   client.server_capabilities.documentFormattingProvider = false
+          --   client.server_capabilities.hoverProvider = false
+          --   client.server_capabilities.renameProvider = false
+          -- end,
+          settings = {
+            pylsp = {
+              configurationSources = { 'flake8', 'mypy' },
+              plugins = {
+                flake8 = { enabled = true },
+                mypy = { enabled = true },
+              },
+            },
+          },
+        },
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
-        -- But for many setups, the LSP (`tsserver`) will work just fine
-        tsserver = {
+        -- But for many setups, the LSP (`ts_ls`) will work just fine
+        ts_ls = {
           init_options = {
             hostInfo = 'neovim',
             maxTsServerMemory = 8192,
