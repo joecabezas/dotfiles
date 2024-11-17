@@ -1,5 +1,7 @@
 return {
   'nvim-treesitter/nvim-treesitter-context',
+  event = { 'BufReadPost', 'BufWritePost', 'BufNewFile' },
+  dependencies = 'nvim-treesitter/nvim-treesitter',
   opts = {
     -- When separator is set, the context will only show up when there are at least 2 lines above cursorline.
     -- enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
@@ -16,4 +18,21 @@ return {
     -- zindex = 20, -- The Z-index of the context window
     -- on_attach = nil, -- (fun(buf: integer): boolean) return false to disable attaching
   },
+  keys = {
+    {
+      '[c',
+      function()
+        require('treesitter-context').go_to_context()
+      end,
+    },
+  },
+  -- keys = {
+  --   {
+  --     '<leader>[c',
+  --     function()
+  --       require('treesitter-context').go_to_context(vim.v.count1)
+  --     end,
+  --     desc = 'Jump to context (upwards)',
+  --   },
+  -- },
 }
