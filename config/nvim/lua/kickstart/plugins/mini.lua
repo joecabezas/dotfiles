@@ -39,6 +39,8 @@ return {
         symbol = '│',
         options = { try_as_border = true },
       }
+
+      require('mini.starter').setup()
     end,
   },
 }
