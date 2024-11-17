@@ -1,5 +1,6 @@
 return {
   'dstein64/vim-startuptime',
+  enabled = false,
   -- lazy-load on a command
   cmd = 'StartupTime',
   -- init is called during startup.
