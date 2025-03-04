@@ -1,4 +1,4 @@
-local js_formatters = { { 'prettierd', 'prettier' } }
+local js_formatters = { 'prettier', stop_after_first = true }
 
 return {
   { -- Autoformat
