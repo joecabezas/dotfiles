@@ -152,7 +152,7 @@ return {
         -- pyright = {},
         -- ruff = {},
         pylsp = {
-          enable = false,
+          enabled = false,
           -- I am commenting this out since I am also removing pyright
           -- disable several capabilities in favor of pyright
           -- on_attach = function(client, buffer)
@@ -177,15 +177,37 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        ts_ls = {
-          init_options = {
-            hostInfo = 'neovim',
-            maxTsServerMemory = 8192,
-            tsserver = { useSyntaxServer = 'never' },
-          },
-        },
+        -- ts_ls = {
+        --   enabled = false,
+        --   log = 'verbose',
+        --   maxTsServerMemory = 16384,
+        --   init_options = {
+        --     hostInfo = 'neovim-check-if-this-appears-in-log',
+        --     maxTsServerMemory = 16384,
+        --     log = 'verbose',
+        --     tsserver = {
+        --       -- useSyntaxServer = 'never',
+        --       log = 'verbose',
+        --     },
+        --   },
+        --   tsserver = {
+        --     logVerbosity = 'verbose',
+        --     trace = 'verbose',
+        --   },
+        --   settings = {
+        --     maxTsServerMemory = 16384, -- Set memory limit in MB
+        --     typescript = {
+        --       maxTsServerMemory = 16384, -- Set memory limit in MB
+        --       tsserver = {
+        --         maxTsServerMemory = 16384, -- Set memory limit in MB
+        --         log = 'verbose',
+        --       },
+        --     },
+        --   },
+        -- },
 
         lua_ls = {
+          enabled = false,
           -- cmd = {...},
           -- filetypes = { ...},
           -- capabilities = {},
@@ -200,6 +222,7 @@ return {
           },
         },
         rubocop = require('lspconfig').rubocop.setup {
+          enabled = false,
           cmd = { os.getenv 'PWD' .. '/bin/rubocop', '--lsp' },
         },
       }
@@ -216,10 +239,10 @@ return {
       -- for you, so that they are available from within Neovim.
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
-        'eslint',
-        'marksman',
+        -- 'eslint',
+        -- 'marksman',
         -- 'sorbet',
-        'stylua', -- Used to format Lua code
+        -- 'stylua', -- Used to format Lua code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

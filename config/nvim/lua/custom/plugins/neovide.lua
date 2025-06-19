@@ -17,6 +17,7 @@ if vim.g.neovide then
 
   vim.g.neovide_show_border = false
   vim.g.neovide_refresh_rate = 120
+  vim.g.neovide_input_macos_option_key_is_meta = 'only_left'
 end
 
 return {}
