@@ -1,36 +1,24 @@
+# export ZPLUG_USE_CACHE=false
 source ~/.zplug/init.zsh
 
-zplug "junegunn/fzf"
-
-zplug "zsh-users/zsh-syntax-highlighting"
+# zplug "zsh-users/zsh-syntax-highlighting"
 
 zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/common-aliases", from:oh-my-zsh
+# zplug "plugins/common-aliases", from:oh-my-zsh
 
 zplug 'dracula/zsh', as:theme
 
 zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"fzf.zsh"
-zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"nodenv.zsh"
-zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"rbenv.zsh"
-zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"pyenv.zsh"
+# zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"nodenv.zsh"
+# zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"rbenv.zsh"
+# zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"pyenv.zsh"
 zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"utils.zsh"
 zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"custom_zsh.zsh"
 
-# mac only
-if [[ $(uname) == "Darwin" ]]; then
-    zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"mac.zsh"
-fi
-
-# too slow
-# # Install plugins if there are plugins that have not been installed
-# echo check 0
-# if ! zplug check --verbose; then
-#     printf "Install? [y/N]: "
-#     if read -q; then
-#         echo; zplug install
-#     fi
+# # mac only
+# if [[ $(uname) == "Darwin" ]]; then
+#     zplug "~/git/dotfiles/config/k014_zsh", from:local, defer:1, use:"mac.zsh"
 # fi
-# echo check 1
 
 # Then, source plugins and add commands to $PATH
 zplug load

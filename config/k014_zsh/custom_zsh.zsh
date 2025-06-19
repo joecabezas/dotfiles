@@ -31,4 +31,4 @@ alias reload='source ~/.zshrc'
 
 # removing alias from oh-my-zsh
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/common-aliases/common-aliases.plugin.zsh
-unalias rm
+# unalias rm

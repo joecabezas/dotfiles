@@ -1,3 +1,5 @@
+# .zshrc
+
 # Load antigen and initialize antigen
 #source $HOME/antigen.zsh
 #antigen init $HOME/.antigenrc
@@ -10,8 +12,20 @@
 # source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 # load zplug and plugins
-# echo zmodload zsh/zprof 0
 # zmodload zsh/zprof
-# echo zmodload zsh/zprof 1
+# source ~/.zplugrc
+# zprof
 
-source ~/.zplugrc
+# antidote
+source ~/.antidote/antidote.zsh
+antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
+
+source ~/git/dotfiles/config/k014_zsh/fzf.zsh
+# source ~/git/dotfiles/config/k014_zsh/nodenv.zsh
+# source ~/git/dotfiles/config/k014_zsh/rbenv.zsh
+source ~/git/dotfiles/config/k014_zsh/pyenv.zsh
+source ~/git/dotfiles/config/k014_zsh/utils.zsh
+source ~/git/dotfiles/config/k014_zsh/custom_zsh.zsh
+
+# work
+source ~/git/dotfiles/config/k014_zsh/work.zsh
