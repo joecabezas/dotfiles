@@ -28,4 +28,6 @@ source ~/git/dotfiles/config/k014_zsh/utils.zsh
 source ~/git/dotfiles/config/k014_zsh/custom_zsh.zsh
 
 # work
-source ~/git/dotfiles/config/k014_zsh/work.zsh
+if [[ "$(uname)" == "Darwin" ]]; then
+  source ~/git/dotfiles/config/k014_zsh/work.zsh
+fi
