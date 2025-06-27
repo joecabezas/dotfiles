@@ -1,0 +1,7 @@
+dracula/zsh
+
+agkozak/zsh-z
+# undg/zsh-nvm-lazy-load
+
+getantidote/use-omz
+ohmyzsh/ohmyzsh path:plugins/git
