@@ -152,7 +152,7 @@ return {
         -- pyright = {},
         -- ruff = {},
         pylsp = {
-          enabled = false,
+          -- enabled = false,
           -- I am commenting this out since I am also removing pyright
           -- disable several capabilities in favor of pyright
           -- on_attach = function(client, buffer)
@@ -162,9 +162,19 @@ return {
           -- end,
           settings = {
             pylsp = {
-              configurationSources = { 'flake8', 'mypy' },
+              configurationSources = { 'mypy' },
               plugins = {
-                flake8 = { enabled = true },
+                -- Disable default formatters
+                autopep8 = { enabled = false },
+                yapf = { enabled = false },
+                -- Disable flake8 (ruff handles linting)
+                flake8 = { enabled = false },
+                -- Enable ruff for linting and formatting
+                ruff = {
+                  enabled = true,
+                  formatEnabled = true,
+                },
+                -- Keep mypy for type checking
                 mypy = { enabled = true },
               },
             },
