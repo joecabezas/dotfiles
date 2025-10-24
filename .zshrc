@@ -27,7 +27,5 @@ source ~/git/dotfiles/config/k014_zsh/pyenv.zsh
 source ~/git/dotfiles/config/k014_zsh/utils.zsh
 source ~/git/dotfiles/config/k014_zsh/custom_zsh.zsh
 
-# work
-if [[ "$(uname)" == "Darwin" ]]; then
-  source ~/git/dotfiles/config/k014_zsh/work.zsh
-fi
+# Local machine-specific configuration (gitignored)
+[ -f ~/git/dotfiles/config/k014_zsh/local.zsh ] && source ~/git/dotfiles/config/k014_zsh/local.zsh

@@ -1,3 +1,6 @@
 *.swp
 *.*~
 tags
+config/k014_zsh/local.zsh
+config/k014_zsh/work.zsh
+config/k014_zsh/mac.zsh
