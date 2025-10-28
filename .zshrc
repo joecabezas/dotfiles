@@ -21,7 +21,7 @@ source ~/.antidote/antidote.zsh
 antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 
 source ~/git/dotfiles/config/k014_zsh/fzf.zsh
-# source ~/git/dotfiles/config/k014_zsh/nodenv.zsh
+source ~/git/dotfiles/config/k014_zsh/nodenv.zsh
 # source ~/git/dotfiles/config/k014_zsh/rbenv.zsh
 source ~/git/dotfiles/config/k014_zsh/pyenv.zsh
 source ~/git/dotfiles/config/k014_zsh/utils.zsh
