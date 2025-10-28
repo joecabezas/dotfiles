@@ -1,6 +1,13 @@
 *.swp
 *.*~
 tags
+
+# Local/work-specific ZSH configurations
 config/k014_zsh/local.zsh
 config/k014_zsh/work.zsh
 config/k014_zsh/mac.zsh
+
+# Local/work-specific Neovim configurations
+# Convention: *.local.lua for plugin-specific overrides
+config/nvim/lua/custom/plugins/*.local.lua
+config/nvim/lua/custom/*.local.lua

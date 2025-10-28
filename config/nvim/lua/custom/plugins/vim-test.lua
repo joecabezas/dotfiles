@@ -1,3 +1,6 @@
+-- Load work-specific local configuration if it exists
+pcall(require, 'custom.plugins.vim-test.local')
+
 return {
   'vim-test/vim-test',
   dependencies = {
