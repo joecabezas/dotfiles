@@ -231,7 +231,7 @@ return {
             },
           },
         },
-        rubocop = require('lspconfig').rubocop.setup {
+        rubocop = {
           enabled = false,
           cmd = { os.getenv 'PWD' .. '/bin/rubocop', '--lsp' },
         },
