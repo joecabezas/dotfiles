@@ -6,6 +6,7 @@ tags
 config/k014_zsh/local.zsh
 config/k014_zsh/work.zsh
 config/k014_zsh/mac.zsh
+config/k014_zsh/secrets.zsh
 
 # Local/work-specific Neovim configurations
 # Convention: *.local.lua for plugin-specific overrides
