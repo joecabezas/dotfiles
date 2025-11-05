@@ -231,10 +231,10 @@ return {
             },
           },
         },
-        rubocop = {
-          enabled = false,
-          cmd = { os.getenv 'PWD' .. '/bin/rubocop', '--lsp' },
-        },
+        -- rubocop = {
+        --   enabled = false,
+        --   cmd = { os.getenv 'PWD' .. '/bin/rubocop', '--lsp' },
+        -- },
       }
 
       -- Ensure the servers and tools above are installed
