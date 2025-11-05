@@ -1,5 +1,14 @@
 local js_formatters = { 'prettier', stop_after_first = true }
 
+-- Helper function to find project root with .ruff.toml
+local function get_ruff_config()
+  local root = vim.fs.root(0, '.ruff.toml')
+  if root then
+    return root .. '/.ruff.toml'
+  end
+  return nil
+end
+
 return {
   { -- Autoformat
     'stevearc/conform.nvim',
@@ -30,7 +39,7 @@ return {
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
         -- Use ruff for Python formatting and import organization
-        python = { 'ruff_format', 'ruff_organize_imports' },
+        python = { 'ruff_organize_imports', 'ruff_format' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
@@ -40,6 +49,34 @@ return {
         typescriptreact = js_formatters,
         json = js_formatters,
         graphql = js_formatters,
+      },
+      formatters = {
+        -- Configure ruff to use the project's version
+        -- Installed via: uv tool install ruff==<VERSION>
+        ruff_format = {
+          command = vim.fn.expand '~/.local/share/uv/tools/ruff/bin/ruff',
+          args = function()
+            local config = get_ruff_config()
+            if config then
+              return { 'format', '--config', config, '--stdin-filename', '$FILENAME', '-' }
+            else
+              return { 'format', '--stdin-filename', '$FILENAME', '-' }
+            end
+          end,
+          stdin = true,
+        },
+        ruff_organize_imports = {
+          command = vim.fn.expand '~/.local/share/uv/tools/ruff/bin/ruff',
+          args = function()
+            local config = get_ruff_config()
+            if config then
+              return { 'check', '--select', 'I', '--fix', '--config', config, '--stdin-filename', '$FILENAME', '-' }
+            else
+              return { 'check', '--select', 'I', '--fix', '--stdin-filename', '$FILENAME', '-' }
+            end
+          end,
+          stdin = true,
+        },
       },
     },
   },
