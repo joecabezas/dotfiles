@@ -1,48 +1,24 @@
-## Install Steps:
+# dotfiles
+
+Personal Zsh + Neovim configuration, managed with [antidote](https://getantidote.github.io/) (Zsh plugins) and [lazy.nvim](https://github.com/folke/lazy.nvim) (Neovim plugins).
+
+## Quick install
 
 ```
-cd
-mkdir -p ~/git/dotfiles
-git clone https://github.com/joecabezas/dotfiles.git ~/git/dotfiles
-
-ln -s ~/git/dotfiles/.zshrc .
-ln -s ~/git/dotfiles/.zplugrc .
-
-# install code taken directly from zplug repo:
-# https://github.com/zplug/zplug
-echo installing zplug
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-zplug install
+mkdir -p ~/git
+git clone git@github.com:joecabezas/dotfiles.git ~/git/dotfiles
 ```
 
-## Install tools
+Then install `zsh`, `neovim`, and `antidote`, symlink the config files into place, and set `zsh` as your login shell.
 
-### Zsh
+See **[INSTALL.md](INSTALL.md)** for exact commands, per-platform notes, and troubleshooting. That file is written to be followed step-by-step by a human or an AI coding agent — start there for a full install on a new machine.
 
-depending on platform:
+## Layout
 
-* OSX
-```
-brew install zsh
-```
+- `.zshenv`, `.zshrc`, `.zsh_plugins.txt` — Zsh config, loaded via antidote
+- `config/k014_zsh/` — modular Zsh config sourced by `.zshrc` (fzf, pyenv, nodenv, aliases, etc.)
+- `config/nvim/` — Neovim config, based on kickstart.nvim
 
-* Debian and derivatives
-```
-apt install zsh
-```
+## Nerd Fonts
 
-### NeoVim
-
-https://github.com/neovim/neovim/blob/master/BUILD.md
-
-also install configuration:
-```
-mkdir -p ~/.config/nvim
-cd ~/.config/
-ln -s ~/git/dotfiles/config/nvim .
-```
-
-### Nerd Fonts
-
-if you want icons (who am I fooling, nobody else than me will read this), download and install a font from here:
-https://www.nerdfonts.com/
+If you want icons in the prompt/Neovim, install a font from https://www.nerdfonts.com/

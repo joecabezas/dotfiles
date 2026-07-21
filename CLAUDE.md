@@ -50,23 +50,7 @@ The Neovim config uses `lazy.nvim` for plugin management. The `lazy-lock.json` t
 
 ### Installation
 
-Symlink dotfiles from home directory:
-```bash
-ln -s ~/git/dotfiles/.zshrc ~/.zshrc
-ln -s ~/git/dotfiles/.zshenv ~/.zshenv
-ln -s ~/git/dotfiles/.zsh_plugins.txt ~/.zsh_plugins.txt
-```
-
-Install antidote plugin manager (replaces older zplug):
-```bash
-git clone --depth=1 https://github.com/mattmc3/antidote.git ~/.antidote
-```
-
-Install Neovim config:
-```bash
-mkdir -p ~/.config
-ln -s ~/git/dotfiles/config/nvim ~/.config/nvim
-```
+Full step-by-step install (new machine, all platforms, troubleshooting) lives in [INSTALL.md](INSTALL.md) — follow it exactly rather than improvising symlink commands here, especially the Homebrew-`PATH`-before-antidote ordering in `.zshenv`, which is required and easy to get wrong.
 
 ### Testing Changes
 
