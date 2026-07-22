@@ -3,7 +3,8 @@ return {
   enabled = true,
   config = function()
     require('which-key').add {
-      { '<leader>ait', '<cmd>Copilot toggle<CR>', desc = 'Toggle Copilot' },
+      { '<leader>aie', '<cmd>Copilot enable<CR>', desc = '🟢 Enable Copilot' },
+      { '<leader>aid', '<cmd>Copilot disable<CR>', desc = '🔴 Disable Copilot' },
     }
   end,
 }

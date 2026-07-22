@@ -45,8 +45,8 @@ return {
         items = {
           starter.sections.builtin_actions(),
           { name = 'Oil (file browser)', action = 'Oil --float', section = 'Custom' },
-          starter.sections.recent_files(10, false),
           starter.sections.recent_files(10, true),
+          starter.sections.recent_files(10, false),
           starter.sections.sessions(5, true),
         },
         content_hooks = {
