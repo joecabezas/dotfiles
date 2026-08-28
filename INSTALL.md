@@ -38,7 +38,7 @@ sudo dnf install zsh neovim
 git clone --depth=1 https://github.com/mattmc3/antidote.git ~/.antidote
 ```
 
-Note: an older `README` reference to `zplug` is stale — this repo's `.zshrc` only loads **antidote** (`source ~/.antidote/antidote.zsh`). Ignore any zplug/antigen/zgenom/zprezto instructions you find elsewhere; those lines are commented out in `.zshrc`.
+This repo's `.zshrc` loads **antidote** (`source ~/.antidote/antidote.zsh`). Other legacy plugin-manager instructions are commented out and can be ignored.
 
 ## 4. Symlink the config files
 

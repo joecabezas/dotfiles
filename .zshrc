@@ -11,13 +11,12 @@
 # load zprezto
 # source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
-# load zplug and plugins
 # zmodload zsh/zprof
-# source ~/.zplugrc
 # zprof
 
 # antidote
 source ~/.antidote/antidote.zsh
+zstyle ':omz:update' mode disabled
 antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 
 source ~/git/dotfiles/config/k014_zsh/fzf.zsh
