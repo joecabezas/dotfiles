@@ -13,6 +13,7 @@ source ~/git/dotfiles/config/k014_zsh/nodenv.zsh
 # source ~/git/dotfiles/config/k014_zsh/rbenv.zsh
 source ~/git/dotfiles/config/k014_zsh/pyenv.zsh
 source ~/git/dotfiles/config/k014_zsh/pnpm.zsh
+source ~/git/dotfiles/config/k014_zsh/cargo.zsh
 source ~/git/dotfiles/config/k014_zsh/openclaw.zsh
 source ~/git/dotfiles/config/k014_zsh/utils.zsh
 source ~/git/dotfiles/config/k014_zsh/custom_zsh.zsh
