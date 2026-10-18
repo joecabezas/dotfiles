@@ -18,6 +18,7 @@ source ~/git/dotfiles/config/k014_zsh/hermes.zsh
 source ~/git/dotfiles/config/k014_zsh/openclaw.zsh
 source ~/git/dotfiles/config/k014_zsh/utils.zsh
 source ~/git/dotfiles/config/k014_zsh/custom_zsh.zsh
+source ~/git/dotfiles/config/k014_zsh/eza.zsh
 
 # Local machine-specific configuration (gitignored)
 [ -f ~/git/dotfiles/config/k014_zsh/local.zsh ] && source ~/git/dotfiles/config/k014_zsh/local.zsh
